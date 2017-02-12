@@ -61,7 +61,6 @@ function include_layout_template($template = ""){
 */
 function log_action($action, $message=""){
 $logfile = SITE_ROOT.DS.'logs'.DS.'log.txt';
-var_dump($logfile);
 $new = file_exists($logfile) ? false : true;
 if($handle = fopen($logfile,'a')) { //append
 $timestamp = strftime("%Y-%m-%d %H:%M:%S", time());
