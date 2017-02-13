@@ -60,7 +60,8 @@ function include_layout_template($template = ""){
 * Locate logs logs/log.txt using SITE_ROOT and DS
 */
 function log_action($action, $message=""){
-$logfile = SITE_ROOT.DS.'logs'.DS.'log.txt';
+//$logfile = SITE_ROOT.DS.'logs'.DS.'log.txt';
+  $logfile = 'C:/xampp/htdocs/personal-blog-oop/logs/log.txt';
 $new = file_exists($logfile) ? false : true;
 if($handle = fopen($logfile,'a')) { //append
 $timestamp = strftime("%Y-%m-%d %H:%M:%S", time());
