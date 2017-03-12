@@ -21,7 +21,7 @@ if ($_GET) {
 
 <a href="index.php">&laquo; Back</a><br />
 <br />
-
+<h1>Test</h1>
 <h2>Log File</h2>
 
 <p><a href="logfile.php?clear=true">Clear log file</a><p>
